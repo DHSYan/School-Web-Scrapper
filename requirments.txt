@@ -1,10 +1,22 @@
 Get grade
     English (DONE)
     Science (DONE)
-
+    if grade is drop down too hard notify the user
 auto submit hours
+    (Have the ablitiy to setup a loadout or set, so cut down to one line command. )
 
 check partipation hours
 
 check for ZEROs in gradebook (Email notify)
 
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+ask user for its Bodwell account and Password (Maybe Store it in a file, and the program would access it) ((DONE))
+
+have the ablitiy to change email and password in the program (DONE)
+
+Have the choice to see current email and password (DONE)

@@ -1,7 +1,13 @@
-.log
+*.log
 
 geckodriver.log
 
 grades.txt
 
 test.py
+
+userEmail.txt
+
+userPassword.txt
+
+requirments.txt

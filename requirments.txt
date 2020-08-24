@@ -1,0 +1,10 @@
+Get grade
+    English (DONE)
+    Science (DONE)
+
+auto submit hours
+
+check partipation hours
+
+check for ZEROs in gradebook (Email notify)
+

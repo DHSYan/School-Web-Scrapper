@@ -13,7 +13,7 @@ def countingClock():
 
 countingClock()
 
-browser = webdriver.Firefox()
+browser = webdriver.Chrome()
 browser.get("https://student.bodwell.edu/")
 print(browser.title)
 

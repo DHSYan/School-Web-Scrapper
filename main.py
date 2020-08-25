@@ -8,11 +8,6 @@ from datetime import datetime
 import threading
 import os.path
 
-checkIfAlreadyExist = (os.path.exists('userEmail.txt'))
-if checkIfAlreadyExist == False:
-    initialSetup()
-else:
-    pass
 
 def initialSetup():
 
@@ -223,6 +218,12 @@ def currentAccount():
     with open("userPassword.txt", "r") as READuserPassword:
         print(READuserPassword.readline())
         READuserPassword.close()
+
+checkIfAlreadyExist = (os.path.exists('userEmail.txt'))
+if checkIfAlreadyExist == False:
+    initialSetup()
+else:
+    pass
     
 countingClock()
 browser = webdriver.Chrome()
@@ -233,6 +234,7 @@ print(f"You are currently on: {url}")
 login()
 
 while True:
+    print("'Help', with command")
     command = input("Command: ").upper()
     if command == "SUBMIT":
         submitHours()
@@ -242,3 +244,14 @@ while True:
         changeInfo()
     elif command == "CURRENT":
         currentAccount()
+    elif command == "HELP":
+        print('''
+            "Submit" -- Submit Hours
+            "Grade"  -- Get your currnet class grade
+            "Change" -- Change your current Email and Password settings
+            "Current" -- See your current email and password
+        ''')
+    elif command == "QUIT":
+        print("Closing in 3")
+        sleep(3)
+        quit()

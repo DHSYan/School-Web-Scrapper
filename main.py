@@ -8,6 +8,7 @@ from datetime import datetime
 import threading
 import os.path
 
+browser = webdriver.Chrome()
 
 def initialSetup():
 
@@ -221,16 +222,17 @@ def currentAccount():
         print(READuserPassword.readline())
         READuserPassword.close()
 
-checkIfAlreadyExist = (os.path.exists('userEmail.txt'))
-if checkIfAlreadyExist == False:
+countingClock()
+
+checkEmailFile = (os.path.exists('userEmail.txt'))
+checkPasswordFile = (os.path.exists('userPassword.txt'))
+if checkEmailFile or checkPasswordFile  == False:
     initialSetup()
 else:
     pass
-    
-countingClock()
-browser = webdriver.Chrome()
+
 browser.get("https://student.bodwell.edu/")
-sleep(3)
+sleep(2)
 url = browser.current_url
 print(f"You are currently on: {url}")
 login()

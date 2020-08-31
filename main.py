@@ -39,6 +39,7 @@ def initialSetup():
         READuserPassword.close()
     print("Are these correct?")
     askIfCorrect = input(": ")
+
 def changeInfo():
     print("What info do you want to change, Email or Password?")
     changeWhatKind = input(": ").upper()
@@ -57,6 +58,7 @@ def changeInfo():
 def countingClock():
     threading.Timer(600.0, countingClock).start()
     print(datetime.today().strftime('%Y-%m-%d-%H:%M:%S'))
+
 def getGrade():
 
     sleep(5)
